@@ -7,12 +7,11 @@
   <title>Currículum Vitae - Hector Daniel Ayarachi Fuentes
   </title>
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-<header class="bg-gray-900 text-white body-font">
+  <header class="bg-gray-900 text-white body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <span class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
         <span class="ml-3 text-xl">Currículum Vitae 📄</span>
@@ -28,28 +27,20 @@
       </div>
     </div>
   </section>
-
-  
-
   <main class="container mx-auto flex flex-wrap py-6">
-
     <section class="w-full flex flex-col items-center px-3">
       <img class="w-32 h-32 rounded-full object-cover mt-6" src="perfil.jpg" alt="Foto de perfil">
       <h1 class="text-3xl text-gray-900 mt-2">Hector Daniel Ayarachi Fuentes</h1>
       <p class="text-base text-gray-600 mt-1">Lic. en RRHH</p>
-  
       <div class="text-gray-700 mt-4">
-          <h2 class="text-2xl text-gray-900">Sobre mí 🚀</h2>
-  
-          <p>
-              Soy un profesional apasionado por la administración, con 5 años de experiencia en el sector. Poseo una sólida formación académica y una amplia experiencia en gestión de proyectos, análisis de datos y liderazgo de equipos. Me considero una persona organizada, eficiente y con gran capacidad de trabajo en equipo. 🌟
-          </p>
+        <h2 class="text-2xl text-gray-900">Sobre mí 🚀</h2>
+        <p>
+          Soy un profesional apasionado por la administración, con 5 años de experiencia en el sector. Poseo una sólida
+          formación académica y una amplia experiencia en gestión de proyectos, análisis de datos y liderazgo de
+          equipos. Me considero una persona organizada, eficiente y con gran capacidad de trabajo en equipo. 🌟
+        </p>
       </div>
-  </section>
-  
-  
-  
-
+    </section>
     <section class="w-full flex flex-col items-start px-3 mt-8">
       <h2 class="text-2xl text-gray-900">Experiencia Laboral 🏢</h2>
       <ul class="list-none mt-2">
@@ -66,14 +57,14 @@
           <h3 class="text-lg text-gray-700">Asistente de Administración</h3>
           <p class="text-base text-gray-600">Empresa ABC, Ciudad, 2018 - 2020</p>
           <ul class="list-disc ml-4 mt-1">
-            <li>Brindar apoyo administrativo al gerente general, incluyendo gestión de agenda, organización de reuniones y elaboración de informes.</li>
+            <li>Brindar apoyo administrativo al gerente general, incluyendo gestión de agenda, organización de reuniones
+              y elaboración de informes.</li>
             <li>Realizar tareas de contabilidad y facturación.</li>
             <li>Atender a clientes y proveedores de forma cordial y eficiente.</li>
           </ul>
         </li>
       </ul>
     </section>
-
     <section class="w-full flex flex-col items-start px-3 mt-8">
       <h2 class="text-2xl text-gray-900">Estudios 📚</h2>
       <ul class="list-none mt-2">
@@ -83,7 +74,6 @@
         </li>
       </ul>
     </section>
-
     <section class="w-full flex flex-col items-start px-3 mt-8">
       <h2 class="text-2xl text-gray-900">Habilidades 🚀</h2>
       <ul class="list-disc mt-2">
@@ -93,16 +83,14 @@
         <li class="mb-2">Organización y Eficiencia</li>
       </ul>
     </section>
-
     <section class="w-full flex flex-col items-start px-3 mt-8">
       <h2 class="text-2xl text-gray-900">Agradecimiento 🙏</h2>
       <p class="text-gray-700 mt-2">
-        Agradezco la oportunidad de presentar mi currículum y estoy disponible para proporcionar más información en una entrevista personal. ¡Espero con interés la posibilidad de contribuir a su equipo!
+        Agradezco la oportunidad de presentar mi currículum y estoy disponible para proporcionar más información en una
+        entrevista personal. ¡Espero con interés la posibilidad de contribuir a su equipo!
       </p>
     </section>
-
   </main>
-
   <footer class="bg-gray-800 text-white body-font w-full">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <div class="w-full md:w-auto">
@@ -112,16 +100,16 @@
       </div>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <a href="#" class="mr-5 hover:text-gray-300" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-<a href="#" class="mr-5 hover:text-gray-300" title="Hotmail"><i class="fas fa-envelope"></i> Hotmail</a>
-<a href="#" class="mr-5 hover:text-gray-300" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
-<a href="#" class="hover:text-gray-300" title="Descargas"><i class="fas fa-download"></i> Descargas</a>
-
-        
-
+        <a href="#" class="mr-5 hover:text-gray-300" title="Hotmail"><i class="fas fa-envelope"></i> Hotmail</a>
+        <a href="#" class="mr-5 hover:text-gray-300" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#" role="button" onclick="downloadPDF()" class="hover:text-gray-300" title="Descargas"><i
+            class="fas fa-download"></i> Descargas</a>
       </nav>
     </div>
   </footer>
-
+  <div id="fechaDescarga"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
